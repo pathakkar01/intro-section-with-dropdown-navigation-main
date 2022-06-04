@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="snap" />
+      </div>
+
+      <input type="checkbox" id="menu" />
+      <aside id="menu-controller">
+        <label for="menu" class="icon"></label>
+      </aside>
+
+      <div id="menu-dimmed-bg"></div>
+      <nav class="nav-section" id="menu-content">
+        <label for="menu" class="icon"></label>
+        <ul class="nav-items">
+          <li class="nav-item with-pop-ups" id="nav-item-1">
+            <a href="#">
+              <div class="nav-decs">Features</div>
+              <div class="nav-icon">
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </div>
+            </a>
+            <div class="pop-up" id="pop-up-1">
+              <ul class="pop-up-items">
+                <li class="pop-up-item with-pop-ups">
+                  <img src="./images/icon-todo.svg" alt="to-do" />
+                  <span>Todo List</span>
+                </li>
+                <li class="pop-up-item">
+                  <img src="./images/icon-calendar.svg" alt="to-do" />
+                  <span>Calender</span>
+                </li>
+                <li class="pop-up-item">
+                  <img src="./images/icon-reminders.svg" alt="to-do" />
+                  <span>Reminders</span>
+                </li>
+                <li class="pop-up-item">
+                  <img src="./images/icon-planning.svg" alt="to-do" />
+                  <span>Planning</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item" id="nav-item-2">
+            <a href="#">
+              <div class="nav-decs">Company</div>
+              <div class="nav-icon">
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </div>
+            </a>
+            <div class="pop-up" id="pop-up-2">
+              <ul class="pop-up-items">
+                <li class="pop-up-item">
+                  <span>History</span>
+                </li>
+                <li class="pop-up-item">
+                  <span>Our Team</span>
+                </li>
+                <li class="pop-up-item">
+                  <span>Blog</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#">Careers</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+        </ul>
+        <ul class="sign-in-btns">
+          <li><a href="#">Login</a></li>
+          <li><button>Register</button></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div class="main-image">
+        <img
+          src="./images/image-hero-desktop.png"
+          alt="Hero"
+          class="desktop-hero"
+        />
+        <img
+          src="./images/image-hero-mobile.png"
+          alt="Hero"
+          class="mobile-hero"
+        />
+      </div>
+      <div class="main-content">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync. no matter your location. Streamline processes.
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn More</button>
+        <div>
+          <div class="logo-items">
+            <div class="logo-item">
+              <img src="./images/client-databiz.svg" alt="" />
+            </div>
+            <div class="logo-item">
+              <img src="./images/client-audiophile.svg" alt="" />
+            </div>
+            <div class="logo-item">
+              <img src="./images/client-meet.svg" alt="" />
+            </div>
+            <div class="logo-item">
+              <img src="./images/client-maker.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Pooja</a>.
+    </div> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
